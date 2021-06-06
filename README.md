@@ -17,6 +17,7 @@ class CfgFunctions {
 ```
 
 3. Add it to objects in your mission:
+
 3a. In the editor via an object's init field:
 ```sqf
 this addAction ["<t color='#FF0000'>Save Loadout</t>", { [player, getUnitLoadout player, "whatever you want"] remoteExec ["VSKS_fnc_saveLoadout", clientOwner]; }, nil, 1.5, true, false, "", "true", 8]; this addAction ["<t color='#FF0000'>Load Loadout</t>", { [player, "whatever you want"] remoteExec ["VSKS_fnc_loadLoadout", clientOwner]; }, nil, 1.5, true, false, "", "true", 8];
